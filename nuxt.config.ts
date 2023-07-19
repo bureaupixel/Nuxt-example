@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   app: {
+    baseURL: '/Nuxt-example/',
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       charset: 'utf-8',
@@ -14,9 +15,5 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
-  },
-  target: 'static',
-  router: {
-    base: '/nuxt-example/'
   }
 })
