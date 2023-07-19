@@ -15,4 +15,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  target: 'static',
+  router: {
+    base: '/nuxt-example/'
+  }
 })
